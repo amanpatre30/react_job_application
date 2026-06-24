@@ -1,0 +1,10 @@
+services:
+  - type: static
+    name: jobby-app
+    env: static
+    branch: main
+    repo: github.com/amanpatre30/jobbyApp
+    buildCommand: npm install && npm run build
+    publishPath: build
+    plan: free
+    nodeVersion: 18
